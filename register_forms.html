@@ -14,69 +14,74 @@
 		To join the Mpape connect movement, you have have to register with us.Feel free to give us your details about yourself as we promise your details is in good hands.
 	</p>
 
-	<form action="Book mark.html">
+	<form action="Book mark.html" method="POST">
+		<p>Filed marked in astericks (*) are required.</p>
 		<fieldset>
 			<legend>Sign up form- please fill in the required field </legend>
+			<section>
+				<label>Connet Area</label>
+				<input type="text" name="area" value="mpape connect" readonly>
+			</section>
 
 			<section>
 				<label>profile photo</label>
-				<input type="file" name="" accept=".jpg, .jpeg,  .webp">
+				<input type="file" name="photo" accept=".jpg, .jpeg,  .webp">
 			</section>
 			
 			<section>
-				<label>First Name </label><br>
-				<input type="text" name="">
+				<label>First Name*</label><br>
+				<input type="text" name="first_name " required>
 			</section>
 
 			<section>
 				<label>Middle Name </label><br>
-				<input type="text" name="">
+				<input type="text" name="middle_name">
 			</section>
 
 			<section>
-				<label>last Name </label><br>
-				<input type="text" name="">
+				<label>last Name*</label><br>
+				<input type="text" name="Last_name" required>
 			</section>
 
 			<section>
-				<label>Date of birth </label><br>
-				<input type="date" name="">
+				<label>Date of birth*</label><br>
+				<input type="date" name="birth" required value="19998-05-14">
 			</section>
 
 			<section>
-				<label>Gender</label><br>
-				<input type="radio" name="mirabel"> Male
-				<input type="radio" name="mirabel"> Female
+				<label>Gender*</label><br>
+				<input type="radio" name="mirabel" required checked> Male
+				<input type="radio" name="mirabel" required> Female
 			</section>
 
 			<section>
-				<label>Mobile Number </label><br>
-				<input type="number" name="">
+				<label>Mobile Number*</label><br>
+				<input type="number" name="Number"required>
 			</section>
 
 			<section>
-				<label>Email address</label><br>
-				<input type="email" name="">
+				<label>Email address*</label><br>
+				<input type="email" name="email" required>
 			</section>
 
 			<section>
-				<label>Nationality</label><br>
-				<select>
+				<label>Nationality*</label><br>
+				<select name="country" required>
 					<option>Please select a country</option>
 					<option>USA</option>
 					<option>Canada</option>
 					<option>Nigeria</option>
 					<option>Ghana</option>
-					<option>Uk</option>
+					<option selected>Uk</option>
 					<option>senegal</option>
 				</select>
 			</section>
 
 			<section>
-				<label>State of origin</label><br>
-				<select>
+				<label>State of origin*</label><br>
+				<select name="state" required>
 					<option>Please select a state</option>
-					<option>Delta</option>
+					<option selected>Delta</option>
 					<option>FCT</option>
 					<option>Osun</option>
 					<option>Lagos</option>
@@ -86,17 +91,17 @@
 			</section>
 
 			<section>
-				<label>Residential Address</label><br>
-				<textarea cols="30" rows="10"></textarea>
+				<label>Residential Address*</label><br>
+				<textarea required cols="30" rows="10" name="address">new stardard area.juction</textarea>
 			</section>
 
 			<section>
 				
 				<label>Favourite Colour</label>
-				<input type="color" name="">
+				<input type="color" name="calor" value="#ff7f27">
 			</section>
 
-			<section>
+			<section name="submit">
 				<button type="submit">submit</button>
 				<button type="reset">Reset</button>
 

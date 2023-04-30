@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+</head>
+<body>
+
+	<table border="2" cellspacing="6">
+		<form>
+			<thead>
+				<th colspan="2" style="background: rgb(252, 252, 169);"><h3 style="color:red;">Registration Form</h3></th>
+			</thead>
+
+			<tr style="background:rgb(0, 240, 255);">
+			<td>Enter Name</td>
+			<td width="300px"></td>
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+			<td>Enter Password</td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+			<td>Enter Address</td>
+			<td>
+				<textarea cols="30" rows="10"></textarea>
+			</td>
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+			<td>Select game</td>
+				<td>
+					<input type="checkbox" name="" checked readonly> Hockey
+					<input type="checkbox" name=""> Football
+					<input type="checkbox" name=""> Badminton
+					<input type="checkbox" name=""> Cricket
+					<input type="checkbox" name=""> Volleyball
+				</td>
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+			<td>Gender:</td>
+			<td><input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female</td> 
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+			<td>Select Age</td>
+			<td>
+				<select name="age">
+					<option>please select your age</option>
+					<option>30</option>
+					<option>60</option>
+					<option>70</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr style="background:rgb(0, 240, 255);">
+		    <td>Please Select Photo</td>
+		    <td>
+		    <section>
+				<input type="file" name="photo" accept=".jpg, .jpeg,  .webp">
+			</section>
+			
+		    </td>
+		</tr>
+
+		<thead style="background:rgb(0, 240, 255);">
+			<th colspan="2">
+				<button type="click">Click Me</button>
+				<button type="reset">Rset</button>
+				<button type="submit">Submit Form</button>
+			</th>
+		</thead>
+		
+		</form>
+	</table>
+</body>
+</html>

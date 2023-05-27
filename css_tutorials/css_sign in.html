@@ -1,0 +1,120 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Sign in form</title>
+
+				<style type="text/css">
+					body {
+						background: 100%;
+						box-sizing: border-box;
+						margin: 0;
+						padding: 0;
+					}
+
+					.container{
+						 display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						height: 100vh;
+					}
+
+					.form-container{
+						display: flex;
+						flex-direction: column;
+						box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+						width: 400px;
+					}
+
+					.form-container--head{
+						padding: 0 2rem 0 2rem;
+						background: #4CBB17;
+						color: white;
+						border-radius: 8px;
+					}
+
+					.form_input--div{
+						display: flex;
+						width: 80%;
+						flex-direction: column;
+						justify-content: center;
+						margin: auto;
+						margin-top: 2rem;
+					}
+					.form_input{
+						padding: 13px;
+						border-radius: 17px;
+						outline: none;
+						border: none;
+						background-color: #E3DAC9;
+						color: #000;
+						font-weight: 700;
+					}
+
+					.forgot-password{
+					  display: flex;
+					  justify-content: flex-end;
+					  align-items: flex-start;
+					  margin-right: 2.5rem;
+					  color:#4CBB17 ;
+					}
+
+					.form-btn{
+						margin: auto;
+						 /* Background and text color */
+						  background-color: #4CAF50;
+						  color: white;
+
+						  /* Padding and border */
+						  padding: 10px 20px;
+						  border: none;
+						  border-radius: 17px;
+						  width: 80%;
+/*						  border-radius: 17px;*/
+
+						  /* Hover effect */
+						  transition: background-color 0.3s;
+						}
+
+						.my-button:hover {
+						  background-color: #45a049;
+
+					}
+
+					.signIn{
+						margin-top: 6rem;
+					}
+
+				</style>
+			</head>
+			<body>
+				<div class="container">
+					<form>
+						<div class="form-container">
+							<div class="form-container--head">
+								<h2>Sign In </h2>
+							</div>
+							<div class="form_input--div">
+								<input type="text" name="txt" class="form_input" placeholder="Username" required></br>
+								<input type="text" name="txt" class="form_input" placeholder="Password" required>
+							</div>
+
+								<p class="forgot-password">
+								<span style="color: #E3DAC9"> Forgot </span> &nbsp  Username / Password?</p>
+							
+								<button class="form-btn">SIGN IN</button>
+
+								<div class="signIn">
+									<p style="color: #E3DAC9">Don't have an account?</p>
+									<p style="color: #4CAF50">SIGN UP NOW</p>
+								</div>
+						</div>
+
+					</form>
+				</div>
+
+			</body>
+			</html>

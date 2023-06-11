@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Css Card</title>
+
+	<style type="text/css">
+		*{
+			font-family: sans-serif;
+		}
+		.card {
+			width: 300px;
+			border: 1px solid rgb(240, 240, 240);
+			overflow: hidden;
+			background: 10px;
+		}
+		.card img{
+			width: 100%;
+
+		}
+		.card_body {
+			border: 0px 15px 15px 15px;
+		}
+		.card_link{
+			text-decoration: none;
+			font-size: 13px;
+			background: rgb(150, 0, 200);
+			color: white;
+			padding: 10px 25px;
+			display: inline-block;
+			transition:all 1s;
+		}
+		.card_link:hover {
+				background: rgb(100, 0, 150);
+				border-radius: 100px;
+
+		}
+		.card:hover img{
+			transform: scale(2.25);
+		}
+		img {
+			transition: all 0.5s;
+		}
+		.card_link:hover {
+			border: 0;
+			box-shadow: 0px 0px 10px 5px rgb(140, 240, 240);
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div>
+			<img src="bg_image.jpeg">
+		</div>
+
+		<div class="card_body">
+			<h3>Headies Award notches up</h3>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+			<a href="" class="card_link">Read more</a>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -8,6 +8,7 @@
 	<style type="text/css">
 		* {
 			box-sizing: border-box;
+			font-family: sans-serif;
 		}
 
 		body {
@@ -37,6 +38,7 @@
 			border-left: 0px;
 			padding: 10px;
 			margin-left: 0px;
+			width: 100%;
 
 		}
 		.forget_password {
@@ -50,14 +52,14 @@
 		.login_btn {
 			background: green;
 			color: white;
-			width: 80%;
-			border-radius: 10px;
+			width: 100%;
+			border-radius: 99999999999999px;
 			border: none;
 			margin-top: 30px;
+			padding: 15px;
 		}
 		.image {
-			justify-content: center;
-			align-items: center;
+			border-radius: 100%;
 		}
 		
 	</style>
@@ -66,14 +68,16 @@
 	<form>
 		<h2>Welcome</h2>
 
-		<img src="bg_image.jpeg" width="50px" class="image">
+		<div style="text-align: center;">
+			<img src="https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile-thumbnail.png" width="100px" class="image">
+		</div>
 
-		<div class="Username">
+		<div>
 			<label class="Username">Username</label>
 			<input type="" name="" class="form_input">
 		</div>
 
-		<div class="container">
+		<div class="container" style="margin-top: 20px">
 			<label>Password</label>
 			<input type="" name="" class="form_input">
 		</div>
@@ -82,15 +86,11 @@
 			<button class="login_btn">LOGIN</button>
 		</div>
 
-		<div class="forget_password">
-			
-			<p style="color: green;">
-				<span style="color: gray;">forgot </span>Usernsme / password
-			</p>
-
-			<p style="color: green;">
-				<span style="color: gray;">Dont have an account</span>?Sign up
-			</p>
+		<div style="margin-top: 50px">
+			<ul>
+				<li>Forgot <a href="">Username / Password?</a></li>
+				<li>Don't have an account? <a href="">Sign Up</a></li>
+			</ul>
 		</div>
 
 	</form>

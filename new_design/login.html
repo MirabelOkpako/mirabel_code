@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+				* {
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		body {
+			background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://plus.unsplash.com/premium_photo-1686090448451-fe1327f9b042?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);background-size: cover;
+		}
+		.login_form {
+			width: 350px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			color: #000;
+		}
+		.login_form h1 {
+			font-size: 40px;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 40px 0;
+		}
+		.login_form p {
+			font-size: 20px;
+			margin: 15px 0;
+		}
+		.login_form input {
+			font-size: 16px;
+			width: 100%;
+			padding: 15px 10px;
+			border: 0;
+			border-radius: 5px;
+			outline: none;
+		}
+		.login_form button {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 20px 0;
+			padding: 10px 15px;
+			width: 50%;
+			border-radius: 5px;
+			border: 0;
+		}
+		.login_form button:hover{
+			color: #ff7200;
+			background-color: #000;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login Form</title>
+</head>
+<body>
+		<div class="login_form">
+		<h1>LOGIN FORM</h1>
+		<form>
+			<p>User Name</p>
+			<input type="text" name="user" placeholder="User Name">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Password">
+			<button type="submit">LOGIN</button>
+		</form>
+</body>
+</html>

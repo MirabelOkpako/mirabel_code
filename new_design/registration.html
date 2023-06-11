@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<style type="text/css">
+				*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+
+		}
+		body {
+			background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://images.unsplash.com/photo-1684527226965-77d9a170e685?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);background-size: 100%;
+
+		}
+		.registration_form {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+		}
+		.registration_form h1 {
+			font-size: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 40px 0;
+		}
+		.registration_form p {
+			font-size: 20px;
+			margin: 15px 0;
+		}
+		.registration_form input {
+			font-size: 16px;
+			padding: 15px 10px;
+			width: 100%;
+			border: 0;
+			border-radius: 5px;
+			outline: none;
+		}
+		.registration_form button {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 20px 0;
+			padding: 10px 15px;
+			width: 50%;
+			border: 0;
+			border-radius: 5px;
+			color: #000;
+		}
+		.registration_form button :hover {
+			color: red;
+		}
+		.registration_form button a{
+			text-decoration: none;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+		<div class="registration_form">
+		<h1>Registration Form</h1>
+		<form>
+			<p>Full Name:</p>
+			<input type="text" name="full name" placeholder="Full Name">
+			<p>User Name:</p>
+			<input type="text" name="User Name" placeholder="User Name">
+			<p>Email:</p>
+			<input type="text" name="email" placeholder="Email">
+			<p>Password:</p>
+			<input type="text" name="password" placeholder="Password">
+			<button type="submit"><a href="login_form.html">Registration:</a></button>
+		</form>
+	</div>
+</body>
+</html>
